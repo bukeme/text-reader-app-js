@@ -1,0 +1,57 @@
+:root {
+    --body-background: #221f3b;
+    --input-background: #5d54a4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body-background);
+    height: 100vh;
+}
+
+textarea {
+    width: 80%;
+    height: 450px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+textarea:focus {
+    background-color: var(--input-background);
+    color: white;
+}
+
+.input-container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+label,
+input {
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+}
+
+input {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: var(--input-background);
+}
